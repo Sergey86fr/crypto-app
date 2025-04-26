@@ -3,11 +3,12 @@ import { cryptoPortfolio, dataCoin } from "./localData"
 
 
 
+
 // const options = {
 //     method: 'GET',
 //     headers: {
 //       accept: 'application/json',
-//       'X-API-KEY': 'o6CRpu9RhBcIh5ImEpo4co/NMqUzum/FoXV4iwlkI+E='
+//       'X-API-KEY': process.env.API_KEY,
 //     }
 //   };
   
@@ -21,7 +22,7 @@ import { cryptoPortfolio, dataCoin } from "./localData"
 //     method: 'GET',
 //     headers: {
 //       accept: 'application/json',
-//       'X-API-KEY': 'o6CRpu9RhBcIh5ImEpo4co/NMqUzum/FoXV4iwlkI+E='
+//       'X-API-KEY': process.env.API_KEY
 //     }
 //   };
   
