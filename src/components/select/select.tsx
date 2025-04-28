@@ -1,6 +1,7 @@
 import { Select, Space } from "antd"
 import { FC, useContext, useState } from "react"
-import CryptoContext from "../context/crypto-context"
+import CryptoContext from "../../context/crypto-context";
+
 
 interface CustomSelectProps {
     openModal: (val: boolean) => void;
@@ -32,7 +33,7 @@ const CustomSelect:FC<CustomSelectProps> = ({openModal, setCoin}) => {
       
     return (
         <Select
-    style={{ width:"200px" }}
+    style={{ width:"300px" }}
     onSelect={handleSelect}
     // onClick={()=> setSelect((prev) => !prev)}
     value= {selectedValue ? selectedValue : 'press / to open'}

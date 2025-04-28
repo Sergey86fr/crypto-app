@@ -32,6 +32,7 @@ function PortfolioChart() {
         justifyContent: "center",
         alignItems: "center",
         width: 600,
+        marginBottom:30,
       }}
     >
       <Pie data={data} />
