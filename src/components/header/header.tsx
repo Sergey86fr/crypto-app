@@ -4,6 +4,7 @@ import { Button, Drawer, Layout, Modal } from "antd";
 import CustomSelect from "../select/select";
 import CoinInfoModal from "../coin-info-modal/coin-info-modal";
 import AddCoinForm from "../add-coin-form/add-coin-form";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -28,7 +29,11 @@ function Header() {
 
     return (
         <Layout.Header style={headerStyle}>
+          <div>
         <CustomSelect   setCoin={setCoin} openModal={setModal} />
+        <Button><NavLink to={"/"}>main</NavLink></Button>
+        <Button><NavLink to={"/portfolio"}>portfolio</NavLink></Button>
+          </div>
         <Button onClick={() => setDrawer(true)} type="primary">
           Open
         </Button>
