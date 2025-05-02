@@ -33,6 +33,7 @@ function Header() {
         <CustomSelect   setCoin={setCoin} openModal={setModal} />
         <Button><NavLink to={"/"}>main</NavLink></Button>
         <Button><NavLink to={"/portfolio"}>portfolio</NavLink></Button>
+        <Button><NavLink to={"/auth"}>Login</NavLink></Button>
           </div>
         <Button onClick={() => setDrawer(true)} type="primary">
           Open
